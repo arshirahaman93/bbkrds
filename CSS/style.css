@@ -1,0 +1,263 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+}
+
+html{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* utility */
+
+.text-primary{
+    color: #27AE60;
+}
+.l-heading{
+    font-size: 3rem;
+}
+
+
+
+/* HEADER */
+#navbar{
+    
+    background:#2E4053   ;
+    color: white;
+    position: sticky;
+    top:0;
+}
+
+#navbar .nav-containt{
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 2rem;
+   
+}
+
+#navbar .nav-containt .items{
+    display: flex;
+    list-style: none;
+}
+
+#navbar .nav-containt .items .item {
+padding: .9rem .5rem;
+text-decoration: none;
+
+}
+
+#navbar .nav-containt .items .item a { 
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+#navbar .nav-containt .items .item a:hover{
+    background:#27AE60 ;
+}
+    
+#navbar .nav-containt h3{
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+#img-info{
+    background: url("../img/chl2.jpg") no-repeat ;
+    background-size: contain;
+    background-size: cover;
+    height: 400px;
+    background-color: rgba(0, 0, 0,1);
+}
+
+.mid-containt {
+    color:#FDFEFE  ;
+    text-align: center;
+    text-decoration: none;
+    line-height: 20px;
+    
+}
+
+.mid-containt a{
+    text-decoration: none;
+    color:#27AE60;
+}
+.mid-containt h2{
+    padding-top: 100px;
+}
+
+#mid-section{
+   padding: 100px
+    
+}
+
+
+
+/* OUR-PROJECT */
+
+#proj-sec {
+    text-align: center;
+    background: #F0F3F4;
+}
+
+#proj-sec h2 {
+    padding-top: 10px;
+}
+
+#proj-sec .proj-boxes{
+    display: flex;
+    padding-top: 20px;
+}
+
+#proj-sec .proj-boxes .proj-box{
+    line-height: 20px;
+    padding: 15px;
+
+}
+
+#proj-sec .proj-boxes .proj-box:nth-child(1){
+    
+    border-right:1px solid #979A9A;
+
+}
+#proj-sec .proj-boxes .proj-box:nth-child(2){
+    /* border-left:1px solid #979A9A; */
+    border-right:1px solid #979A9A;
+
+}
+
+#proj-sec .proj-boxes .proj-box h1{
+    margin-bottom: 10px;
+
+}
+
+
+
+/* WHO AM I  */
+
+
+#who .who-content{
+    /* background: #D98880; */
+    background: #C0392B;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+
+}
+
+#who .who-content .who-img{
+width: 300px;
+max-height: 300px;
+border-radius: 50%;
+}
+
+
+#who .who-content .who-i{
+    text-align: center;
+    line-height: 1.5rem;
+    padding: 30px;
+    
+}
+
+#who .who-content .who-i h1{
+    margin-top: 20px;
+    padding:20px;
+   
+}
+
+
+
+
+
+ /* FOOTER */
+ .footer-info{
+     background: #D98880;
+     padding: 20px;
+
+ }
+
+
+ /* OUR PROJECT */
+
+ #proj-content {
+     display: flex;
+     flex-direction: row;
+ }
+ #proj-content .proj-nav{
+     background: #2E4053;
+     list-style: none;
+     /* padding:30px; */
+    
+ }
+ #proj-content .proj-nav li{
+     padding:20px 30px;;
+     border-bottom: .7px solid rgb(41, 48, 56);
+     color: white;
+ }
+
+
+ #proj-content .proj-info{
+     text-align: center;
+     padding: 40px;
+     line-height: 1.5rem;
+ }
+
+ #proj-content .proj-info h1{
+    /* text-align: center; */
+    padding-bottom: 20px;
+}
+    
+    #proj-content .proj-nav li:hover{
+        background:#27AE60; 
+        border-radius: 10%;
+        color: black;
+    }
+
+
+
+    /* animetion */
+
+    .ani-who-i{
+        animation:who-h;
+        animation-duration: 2s;
+        position: relative;
+    }
+    
+    .ani-who-h{
+        animation:who-h;
+        animation-duration: 1.5s;
+        position: relative;
+    }
+
+    .ani-box0{
+        animation:xxx;
+        animation-duration: 2s;
+        /* animation-delay:.0se; */
+        position: relative;
+    }
+    .ani-box1{
+        animation:xxx;
+        animation-duration: 2.4s;
+        /* animation-delay:.3s; */
+        position: relative;
+    }
+
+    .ani-box2{
+        animation:xxx;
+        animation-duration: 3s;
+        /* animation-delay:.6se; */
+        position: relative;
+    }
+
+
+
+    @keyframes who-h{
+        0%{right: -400px}
+        100%{right: 0px;}
+    }
+
+
+    @keyframes xxx{
+        0%{right: -1000px}
+        100%{right: 0px;}
+    }

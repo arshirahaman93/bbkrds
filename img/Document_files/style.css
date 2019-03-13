@@ -1,0 +1,14 @@
+.box{
+    color: white;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    margin: 40px;
+    border: 1px solid black;
+}
+
+.box1{background: violet;}
+
+.box2{background: green;}
+
+.box3{background: blue;}
